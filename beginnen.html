@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div {
+            background-color: red;
+        }
+    </style>
+    <script>
+        function mijnfunctie(){
+            var invoer = document.getElementById("invoerveld").value;
+            if(invoer == "Joost"){
+                document.getElementById("uitvoer").innerHTML = "Ga weg Joost, je bent niet welkom!"
+                document.getElementById("uitvoer").style.backgroundColor = 'red';
+            } else {
+                document.getElementById("uitvoer").innerHTML = "Welkom " + invoer;
+                document.getElementById("uitvoer").style.backgroundColor = 'green';
+            }
+            document.getElementById("invoer").value = "";
+        }
+    </script>
+</head>
+<body>
+    <input id="invoerveld">
+    <button onClick="mijnfunctie()">Klik Hier</button>
+    <div id="uitvoer"></div>
+</body>
+</html>
+
